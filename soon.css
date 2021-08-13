@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+
+
+h1{
+    text-align: center;
+    margin: 250px;
+    text-align: center;
+    font-family: pacifico;
+    font-size: 100px;
+    color: orange;
+    box-shadow: 0px 3px 65px 0px red;
+}

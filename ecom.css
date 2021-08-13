@@ -1,0 +1,600 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    background-color: white;
+    z-index: 9;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    box-shadow: 0px 3px 65px 0px rgba(38, 6, 126, 0.568);
+    
+
+}
+
+.nav_top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo{
+    width: 60%;
+    
+
+}
+.logo img{
+    
+    height: 80px;
+    padding: 10px;
+}
+.nav_side{
+    width: 40%;
+    float: right;
+    margin-top: 35px;
+}
+.nav_side a{
+    text-decoration: none;
+    margin-right:20px;
+   
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Arial, sans-serif;
+
+    
+}
+.nav_side a:hover{
+    color: orangered;
+    text-decoration: underline;
+    transition: all 1s ease;
+}
+.main{
+    background-image: url("cap35.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    
+}
+.main_content{
+    
+    padding-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.main_content h2{
+    text-align: center;
+    margin-top: 200px;
+   
+    color:rgb(240, 12, 202);
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+}
+.main_content h2 span{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color:red;
+    opacity: 0.8;
+}
+.main_content .btn{
+    margin-top: 50px;
+    margin-left:45%;
+    margin-right: 40%;
+}
+.main_content .btn a{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: saddlebrown;
+    color: seashell;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.main_content .btn a:hover{
+    background-color: teal;
+    border-bottom: 5px solid turquoise;
+    transition: all 0.5s ease;
+}
+.products{
+    padding-bottom: 50px;
+}
+.products h2{
+    padding: 50px;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(85, 2, 85);
+    font-family: pacifico;
+    font-weight: bold;
+
+}
+.procont{
+    display: flex;
+    
+    flex-wrap:nowrap;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+.item{
+    width: 33.3%;
+    margin: 10px;
+    height: auto;
+
+}
+.itemimg{
+    width: 100%;
+    
+    height: 250px;
+    overflow: hidden;
+}
+.itemimg img{
+    width: 100%;
+    height: 250px;
+
+}
+.item:hover{
+    box-shadow: 0px 3px 50px 0px purple;
+    transition: 1s all ease;
+
+}
+.item_cont{
+    text-align: center;
+}
+.item_cont h3{
+    font-size: 25px;
+    padding: 10px;
+    font-family: Arial;
+
+}
+.item_cont p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial;
+
+}
+.item_cont a{
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(240, 17, 184);
+    color: seashell;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.item_cont a:hover{
+    background-color: black;
+    color: orange;
+    border-bottom: 4px solid orange;
+    transition: all 1s ease;
+}
+.product_btn{
+    margin-top: 3%;
+    text-align: center;
+}
+.product_btn a{
+    font-size: 20px;
+    font-family: Arial;
+    background-color: rgb(9, 13, 230);
+    color: seashell;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.product_btn a:hover{
+    background-color: black;
+    color: orangered;
+    border-bottom: 4px solid orange;
+}
+.high{
+    margin-top: 40px;
+}
+.high h2{
+    text-align: center;
+    font-size: 35px;
+    color: orchid;
+    font-family: Arial;
+    font-weight: bold;
+}
+.high_container{
+    display: flex;
+    margin-top: 20px;
+}
+.high_cont{
+    padding: 20px;
+    width: 40%;
+    float: left;
+}
+.high_cont ul li{
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    border-left: 3px solid orange;
+    color: black;
+    box-shadow: 0px 3px 65px 0px rgb(221, 10, 133);
+    list-style: none;
+}
+.high_cont ul li:hover{
+    background-color: black;
+    color: orange;
+}
+.high_img{
+    width: 40%;
+    float: right;
+    margin-left: 100px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.high_img:hover{
+   box-shadow: 0px 3px 65px 0px purple;
+   transition: all 1s ease ;
+}
+.high_img img{
+    width: 100%;
+    border: 5px solid rgb(53, 235, 8);
+}
+.testi{
+    margin: 20px;
+}
+.testi h2{
+    padding: 20px;
+    font-size: 35px;
+    text-align: center;
+    color: violet;
+    font-weight: bold;
+}
+.testi_container{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    height: auto;
+    
+}
+.testi_container .carousel-inner{
+    
+    box-shadow: none;
+}
+.testi_container .item{
+    background-color:rgb(94, 1, 94);
+    width: 100%;
+    padding: 20px;
+   
+    box-shadow: none;
+}
+.testi_container .item_img{
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+.testi_container .item_img img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    
+}
+.testi_container .item .item_content h3{
+    font-size: 25px;
+    padding: 10px;
+    font-family: Arial;
+    color: blanchedalmond;
+
+}
+.testi_container .item  .item_content p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+footer{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    background-color: #99A3A4;
+}
+.footer_logo img{
+    margin: 10px;
+}
+.pages{
+    text-align: center;
+}
+.pages h3{
+    font-size: 20px;
+    color: black;
+    font-family: Arial;
+    padding: 5px;
+}
+.pages a{
+    text-decoration: none;
+    margin: 10px;
+    font-size: 15px;
+    color: orange;
+    font-family: Arial;
+}
+.pages a:hover{
+    color: white;
+}
+.doc{
+    text-align: center;
+}
+.doc h3{
+    font-size: 20px;
+    color: black;
+    font-family: Arial;
+    padding: 5px;
+}
+.doc a{
+    text-decoration: none;
+    margin: 10px;
+    font-size: 15px;
+    color: orange;
+    font-family: Arial;
+}
+.doc a:hover{
+    color: white;
+}
+.social{
+    text-align: center;
+}
+.social h3{
+    font-size: 20px;
+    color: black;
+    font-family: Arial;
+    padding: 5px;
+}
+.social a{
+    text-decoration: none;
+    margin: 20px;
+    font-size: 30px;
+    color: orange;
+    font-family: Arial;
+}
+.social a:hover{
+    color: black;
+}
+.contact{
+    text-align: center;
+}
+.contact h3{
+    font-size: 20px;
+    color: black;
+    font-family: Arial;
+    padding: 5px;
+}
+.contact a{
+    text-decoration: none;
+    margin: 20px;
+    font-size: 30px;
+    color: orange;
+    font-family: Arial;
+}
+.contact a:hover{
+    color: white;
+}
+footer p{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.team{
+    height: auto;
+    background-color: black;
+}
+
+.team1{
+    display: flex;
+    
+    
+}
+.team h2{
+    padding: 20px;
+    font-size: 35px;
+    text-align: center;
+    color: violet;
+    font-weight: bold;
+}
+.team_video{
+    width: 50%;
+    outline: none;
+    margin: 30px;
+    
+    
+}
+.team_video video{
+    width: 100%;
+    border: 3px solid orange;
+    box-shadow: 0px 3px 65px 0px orange;
+    padding: 10px;
+    height: 500px;
+
+}
+.team_cont{
+    width: 40%;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+.team_cont p{
+    font-size: 23px;
+    font-family: Arial;
+    color:pink;
+    font-weight: bold;
+}
+.feed{
+    margin-top: 30px;
+    height: auto;
+    background-color:burlywood;
+}
+.feed h2{
+    padding: 20px;
+    font-size: 35px;
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+}
+.feed_form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.feed_form form input{
+    margin: 30px;
+    padding:15px;
+    background-color: black;
+    color: orange;
+    font-size: 25px;
+    font-family: Arial;
+    width: 50%;
+    border-radius: 10px;
+
+}
+.feed_form form input:focus{
+    outline: none;
+    box-shadow: 0px 3px 65px 0px orange;
+    transition: all 1s ease;
+}
+.feed_form form input:hover{
+    outline: none;
+    box-shadow: 0px 3px 65px 0px red;
+    transition: all 1s ease;
+}
+.feed_form form textarea{
+    border-radius: 10px;
+    margin: 30px;
+    padding:15px;
+    background-color: black;
+    color: orange;
+    font-size: 25px;
+    font-family: Arial;
+    width: 50%;
+
+}
+.feed_form form textarea:focus{
+    outline: none;
+    box-shadow: 0px 3px 65px 0px orange;
+    transition: all 1s ease;
+}
+.feed_form form textarea:hover{
+    outline: none;
+    box-shadow: 0px 3px 65px 0px red;
+    transition: all 1s ease;
+}
+.feed_form form button{
+    margin: 40px;
+    background-color:purple;
+    color:white;
+    padding: 10px;
+    font-size: 15px;
+    border: transparent;
+    border-radius: 10px;
+    
+    font-family: Arial;
+}
+.feed_form form button:hover{
+    background-color:blue;
+    color:cyan;
+
+}
+.feed_form form span{
+    color:blue;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: bold;
+}
+.about{
+    margin-top:150px;
+    background-color: black;
+}
+.about h2{
+    padding: 20px;
+    font-size: 35px;
+    text-align: center;
+    font-family: pacifico;
+    color: blue;
+    font-weight: bold;
+}
+.about_cont p{
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 30px;
+    color: orange;
+    padding: 20px;
+    text-align: center;
+}
+.about_cont h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: pacifico;
+    font-weight: bold;
+    margin: 30px;
+    color:red;
+    text-align: center;
+    
+}
+.contact1{
+    margin-top: 150px;
+    background-color: black;
+}
+.contact1 h2{
+    padding: 20px;
+    font-size: 60px;
+    text-align: center;
+    font-family: pacifico;
+    color: blue;
+    font-weight: bold;
+
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.g_map{
+    
+    width: 90%;
+    border: 10px solid orange;
+
+    
+}
+
+.g_map iframe{
+    
+    
+    width: 100%;
+}
+.contact_content{
+    padding: 20px;
+    margin: 20px;
+}
+
+.contact_content p{
+    font-size: 40px;
+    font-family: pacifico;
+    color: orange;
+    
+
+}
+.cp1{
+    margin-top:150px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
