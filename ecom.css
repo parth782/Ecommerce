@@ -326,7 +326,7 @@ footer p{
 }
 .pages h3{
     font-size: 20px;
-    color: black;
+    color: whitesmoke;
     font-family: Arial;
     padding: 5px;
 }
@@ -345,7 +345,7 @@ footer p{
 }
 .doc h3{
     font-size: 20px;
-    color: black;
+    color:white;
     font-family: Arial;
     padding: 5px;
 }
@@ -364,7 +364,7 @@ footer p{
 }
 .social h3{
     font-size: 20px;
-    color: black;
+    color:whitesmoke;
     font-family: Arial;
     padding: 5px;
 }
@@ -376,14 +376,14 @@ footer p{
     font-family: Arial;
 }
 .social a:hover{
-    color: black;
+    color:red;
 }
 .contact{
     text-align: center;
 }
 .contact h3{
     font-size: 20px;
-    color: black;
+    color: whitesmoke;
     font-family: Arial;
     padding: 5px;
 }
@@ -395,7 +395,7 @@ footer p{
     font-family: Arial;
 }
 .contact a:hover{
-    color: white;
+    color:red;
 }
 footer p{
     text-align: center;
