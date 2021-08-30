@@ -221,7 +221,7 @@
     <div class="feed">
         <h2>Write A Review</h2>
         <div class="feed_form">
-            <form method="POST" name="feedback" onsubmit="return validation()" id="feedback">
+            <form method="POST" name="feedback"  id="feedback">
                 <input type="email" placeholder="Write your Email" name="email" id="email">
                 <span id="eemail"></span>
                 <input type="text" placeholder="Write your name" name="uname" id="uname">
@@ -271,8 +271,13 @@
         <p>Copyright &copy; 2021 Ecom.All rights reserved</p>
     </footer>
     <script type="text/javaScript">
-       function validation() {
-            var namecheck = /^[A-Za-z._ ]{3,30}$/;
+       
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxaFlRWtTtdH9X0iJbPb9f7IYT8MLh4-PzMAbijWrhE4ClrktQD2ejgJv1TZjzeQuNX/exec'
+            const form = document.forms['feedback']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              var namecheck = /^[A-Za-z._ ]{3,30}$/;
             var emailcheck = /^[A-Za-z0-9.]{3,}@[A-Za-z]{3,6}[.]{1}[A-A-Za-z]{2,6}$/;
             var mobilecheck = /^[6789]{1}[0-9]{9}$/;
             var revicheck = /^[A-A-Za-z0-9._? ]{3,}$/;
@@ -280,6 +285,7 @@
             var email = document.getElementById('email').value;
             var mobile = document.getElementById('mobile').value;
             var review = document.getElementById('review').value;
+            var sub=true;
            
            
             if (namecheck.test(uname)) {
@@ -287,32 +293,39 @@
             }
             else {
                 document.getElementById('ename').innerText = "***INVALID NAME";
+                sub=false;
             }
             if (emailcheck.test(email)) {
                 document.getElementById('eemail').innerText = "";
+                if(sub==false){
+                    sub=false;
+                }
             }
             else {
-                document.getElementById('eemail').innerTest = "***INVALID EMAIL";
+                document.getElementById('eemail').innerText = "***INVALID EMAIL";
+                sub=false;
             }
             if (mobilecheck.test(mobile)) {
                 document.getElementById('emobile').innerText = "";
+                if(sub==false){
+                    sub=false;
+                }
             }
             else {
                 document.getElementById('emobile').innerText = "***INVALID MOBILE";
+                sub=false
             }
             if (revicheck.test(review)) {
                 document.getElementById('erev').innerText = "";
+                if(sub==false){
+                    sub=false;
+                }
             }
             else {
                 document.getElementById('erev').innerText = "****PLEASE USE VALID CHARACTERS";
+                sub=false;
             }
-           
-            }
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxaFlRWtTtdH9X0iJbPb9f7IYT8MLh4-PzMAbijWrhE4ClrktQD2ejgJv1TZjzeQuNX/exec'
-            const form = document.forms['feedback']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
+            if(sub!=false){
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => alert("Thanks for your valueable feedback!!!!!!!!!!!!"))
                 .catch(error => console.error('Error!', error.message))
@@ -320,6 +333,10 @@
              document.getElementById('email').value="";
              document.getElementById('mobile').value="";
              document.getElementById('review').value="";
+            }
+            else{
+                alert("Please input carefully and avoiding errors");
+            }
             })
              
     </script>
