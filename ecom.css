@@ -9,6 +9,8 @@
     padding-right: 50px;
     display: flex;
     box-shadow: 0px 3px 65px 0px rgba(38, 6, 126, 0.568);
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     
 
 }
@@ -30,7 +32,7 @@
     padding: 10px;
 }
 .nav_side{
-    width: 40%;
+    width: 60%;
     float: right;
     margin-top: 35px;
 }
@@ -38,14 +40,15 @@
     text-decoration: none;
     margin-right:20px;
    
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bolder;
     font-family: Arial, sans-serif;
+    color: blanchedalmond;
 
     
 }
 .nav_side a:hover{
-    color: orangered;
+    color:black;
     text-decoration: underline;
     transition: all 1s ease;
 }
@@ -66,9 +69,9 @@
 }
 .main_content h2{
     text-align: center;
-    margin-top: 200px;
+    margin-top: 120px;
    
-    color:rgb(240, 12, 202);
+    color:orangered;
     font-size: 50px;
     font-family: Arial, sans-serif;
     font-weight: bolder;
