@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <title>E-Commerce</title>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
         integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
         integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
@@ -15,12 +11,9 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="ecom.css">
-
 </head>
-
 <body>
-
-    <nav class="nav nav_top">
+     <nav class="nav nav_top">
         <div class="logo">
             <img src="logo.png" alt="">
         </div>
@@ -32,8 +25,6 @@
             <a href="soon.html">Login/Register</a>
         </div>
     </nav>
-
-
     <div class="main">
         <div class="main_content">
             <h2>Welcome to ECOM hub
@@ -122,8 +113,7 @@
         <div class="product_btn">
             <a href="services.html">Explore Our Products</a>
         </div>
-
-    </div>
+     </div>
     <div class="high">
         <h2>OUR KEY HIGHLIGHTS</h2>
         <div class="high_container">
@@ -139,7 +129,7 @@
                 </ul>
             </div>
             <div class="high_img">
-                <img src="download.jpg" alt="">
+                <img src="high1.jpg" alt="">
             </div>
         </div>
     </div>
@@ -210,7 +200,7 @@
         <h2>OUR TEAM</h2>
         <div class="team1">
             <div class="team_video">
-                <video controls autoplay loop>
+                <video controls>
                     <source src="intro.mp4" type="video/mp4">
 
                 </video>
@@ -228,13 +218,10 @@
             </div>
         </div>
     </div>
-
-
-
     <div class="feed">
         <h2>Write A Review</h2>
         <div class="feed_form">
-            <form method="POST" name="feedback" onsubmit="return validation()">
+            <form method="POST" name="feedback" onsubmit="return validation()" id="feedback">
                 <input type="email" placeholder="Write your Email" name="email" id="email">
                 <span id="eemail"></span>
                 <input type="text" placeholder="Write your name" name="uname" id="uname">
@@ -284,13 +271,11 @@
         <p>Copyright &copy; 2021 Ecom.All rights reserved</p>
     </footer>
     <script type="text/javaScript">
-     var sub=false;
-
-        function validation() {
-            var namecheck = /^[A-Za-z._]{3,30}$/;
+       function validation() {
+            var namecheck = /^[A-Za-z._ ]{3,30}$/;
             var emailcheck = /^[A-Za-z0-9.]{3,}@[A-Za-z]{3,6}[.]{1}[A-A-Za-z]{2,6}$/;
             var mobilecheck = /^[6789]{1}[0-9]{9}$/;
-            var revicheck = /^[A-A-Za-z0-9._?]{3,}$/;
+            var revicheck = /^[A-A-Za-z0-9._? ]{3,}$/;
             var uname = document.getElementById('uname').value;
             var email = document.getElementById('email').value;
             var mobile = document.getElementById('mobile').value;
@@ -298,70 +283,32 @@
            
            
             if (namecheck.test(uname)) {
-                document.getElementById('ename').innerHTML = "";
-                sub=true;
-                
-
+                document.getElementById('ename').innerText = "";
             }
             else {
-                document.getElementById('ename').innerHTML = "***INVALID NAME";
-                
-                sub=false;
+                document.getElementById('ename').innerText = "***INVALID NAME";
             }
-
-
-
             if (emailcheck.test(email)) {
-                document.getElementById('eemail').innerHTML = "";
-                if(sub!=false){
-                    sub=true;
-                }
-                
+                document.getElementById('eemail').innerText = "";
             }
             else {
-                document.getElementById('eemail').innerHTML = "***INVALID EMAIL";
-                sub=false;
+                document.getElementById('eemail').innerTest = "***INVALID EMAIL";
             }
             if (mobilecheck.test(mobile)) {
-                document.getElementById('emobile').innerHTML = "";
-                if(sub!=false){
-                    sub=true;
-                }
-               
+                document.getElementById('emobile').innerText = "";
             }
             else {
-                document.getElementById('emobile').innerHTML = "***INVALID MOBILE";
-                sub=false;
+                document.getElementById('emobile').innerText = "***INVALID MOBILE";
             }
             if (revicheck.test(review)) {
-                document.getElementById('erev').innerHTML = "";
-                if(sub!=false){
-                    sub=true;
-                }
-                
+                document.getElementById('erev').innerText = "";
             }
             else {
-                document.getElementById('erev').innerHTML = "****PLEASE USE VALID CHARACTERS";
-                sub=false;
+                document.getElementById('erev').innerText = "****PLEASE USE VALID CHARACTERS";
             }
-            
-
-
-
            
-
-
-
-           
-
-
-        }
-        
-       if(sub!=false){
-           console.log(sub);
-        
-
-          const scriptURL = 'https://script.google.com/macros/s/AKfycbzt0yh-6e7oKNQt9OsyRQqMvsLkVdnNCriSF2EAbnNrf0iZMbo4vl9-BkLtnDcTT9UWYg/exec'
+            }
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxaFlRWtTtdH9X0iJbPb9f7IYT8MLh4-PzMAbijWrhE4ClrktQD2ejgJv1TZjzeQuNX/exec'
             const form = document.forms['feedback']
           
             form.addEventListener('submit', e => {
@@ -369,22 +316,13 @@
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => alert("Thanks for your valueable feedback!!!!!!!!!!!!"))
                 .catch(error => console.error('Error!', error.message))
+                document.getElementById('uname').value="";
+             document.getElementById('email').value="";
+             document.getElementById('mobile').value="";
+             document.getElementById('review').value="";
             })
-       }
-       
-
-
-
-
-
-
-    
-      
-
-
-   
+             
     </script>
-    
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
         integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
         crossorigin="anonymous"></script>
@@ -392,14 +330,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous"></script>
-
-
-
-
-
-
-
-
 </body>
-
 </html>
